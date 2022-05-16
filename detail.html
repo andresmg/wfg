@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bolsamanía</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link href="stylesheets/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="container-fluid Header__top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h1 class="Header__brand"><span>Bolsa</span>manía</h1>
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="container-fluid Search">
+      <section class="Search__top">
+        <div class="container">
+          <form action="search" method="GET">
+            <div class="form-group">
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  placeholder="Search by fund name or ISIN"
+                  aria-label="Search by fund name or ISIN"
+                  aria-describedby="basic-addon2"
+                />
+                <span
+                  class="input-group-text Search__icon"
+                  id="basic-addon2"
+                ></span>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+      <section class="Search__bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12"><h2>Simple search</h2></div>
+            <form action="search" method="GET">
+              <div class="row">
+                <div class="col-12 col-sm-4">
+                  <label class="form-label icon icon__manager"
+                    >Fund manager</label
+                  >
+                  <select
+                    class="form-select form-select-lg mb-3"
+                    aria-label=".form-select-lg example"
+                  >
+                    <option selected>Select options</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <label class="form-label icon icon__location">Location</label>
+                  <select
+                    class="form-select form-select-lg mb-3"
+                    aria-label=".form-select-lg example"
+                  >
+                    <option selected>Select options</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+                <div class="col-12 col-sm-4">
+                  <label class="form-label icon icon__sector">Sector</label>
+                  <select
+                    class="form-select form-select-lg mb-3"
+                    aria-label=".form-select-lg example"
+                  >
+                    <option selected>Select options</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row Buttons">
+                <div class="col-12 col-sm-6">
+                  <div class="row justify-content-around">
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary col-5"
+                    >
+                      Advanced filter
+                    </button>
+                    <button
+                      type="button"
+                      class="btn btn-outline-secondary col-5"
+                    >
+                      View my favorites funds
+                    </button>
+                  </div>
+                </div>
+                <div class="col-12 col-sm-6 hide">
+                  <button type="button" class="btn btn-outline-primary">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    </section>
+    <main>
+      <section class="container-fluid Results">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-12 col-sm-6">
+              <h1>AAPP Adventurous A Fund Acc</h1>
+            </div>
+            <div class="col-sm-4 col-8">
+              <button type="button" class="btn btn-outline-primary">Buy</button>
+              <button type="button" class="btn btn-outline-primary">
+                Sell
+              </button>
+            </div>
+            <div class="col-sm-2 col-4 pdf"></div>
+            <div class="col-12 col-sm-4 Results__column">
+              <ul>
+                <li>
+                  <span class="icon icon__manager">ISIN</span>
+                  <span>GHK8765333</span>
+                </li>
+                <li>
+                  <span class="icon icon__manager">Fund manager</span>
+                  <span>7IM</span>
+                </li>
+                <li>
+                  <span class="icon icon__manager">IMA Sector</span>
+                  <span>Flexible Invester</span>
+                </li>
+              </ul>
+            </div>
+            <div class="col-12 col-sm-4 Results__column">
+              <ul>
+                <li>
+                  <span class="icon icon__manager">Fund type</span>
+                  <span>Open Ended Investment Company</span>
+                </li>
+                <li>
+                  <span class="icon icon__manager">OCF</span>
+                  <span>1.18% 01-04-1022</span>
+                </li>
+                <li>
+                  <span class="icon icon__manager">Last Nav</span>
+                  <span>1.95 GPA 09-09-2022</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container Results__chart">
+        <div class="row justify-content-between">
+          <div class="col-12 col-sm-8">
+            <h2>Fund objective</h2>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam at
+              ex ornare, hendrerit velit at, consequat quam. Nam est lacus,
+              volutpat aliquet urna ultrices, rhoncus elementum lacus. Cras nec
+              diam accumsan, lobortis urna vitae, volutpat nulla. Phasellus nec
+              euismod enim, et fringilla felis. Duis a eros nec urna porta
+              rhoncus vel vel elit. Phasellus euismod metus nec mauris
+              condimentum sagittis. Praesent tortor lacus, gravida a
+              pellentesque vel, sagittis quis est.
+            </p>
+            <div class="Results__chart__graph">
+              <h2>Fund performance</h2>
+              <canvas id="myChart"></canvas>
+            </div>
+          </div>
+          <div class="col-12 col-sm-3">
+            <h2>Fees</h2>
+            <table class="table table-hover reduce">
+              <tbody>
+                <tr>
+                  <th scope="row">Ongoing charges figure (OCF)</th>
+                  <td valign="center">1.00 %</td>
+                </tr>
+                <tr>
+                  <th scope="row">Anual management charge</th>
+                  <td valign="center">20.00 %</td>
+                </tr>
+                <tr>
+                  <th scope="row">Initial charge</th>
+                  <td valign="center">4.00 %</td>
+                </tr>
+                <tr>
+                  <th scope="row">Exit charge</th>
+                  <td valign="center">0.00 %</td>
+                </tr>
+              </tbody>
+            </table>
+            <h2 class="mt-5">Risk and modern portfolio statistics</h2>
+            <small>as of 30 April 2022</small>
+            <table class="table rws table-hover">
+              <thead>
+                <tr>
+                  <th scope="col" class="custom"></th>
+                  <th scope="col" class="custom" class="text-center">1Y</th>
+                  <th scope="col" class="custom" class="text-center">3Y</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <th scope="row" data-label="name" class="custom">
+                    <strong>Volatility</strong>
+                  </th>
+                  <td data-label="1Y" valign="center">8.49 %</td>
+                  <td data-label="3Y">12.99%</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-label="name" class="custom">
+                    <strong>Sharpe</strong>
+                  </th>
+                  <td data-label="1Y" valign="center">8.49 %</td>
+                  <td data-label="3Y">12.99%</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-label="name" class="custom">
+                    <strong>Alpha</strong>
+                  </th>
+                  <td data-label="1Y" valign="center">8.49 %</td>
+                  <td data-label="3Y">12.99%</td>
+                </tr>
+                <tr>
+                  <th scope="row" data-label="name" class="custom">
+                    <strong>Information ratio</strong>
+                  </th>
+                  <td data-label="1Y" valign="center">-0.76%</td>
+                  <td data-label="3Y">-0.83%</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      const labels = ['January', 'February', 'March', 'April', 'May', 'June']
+
+      const data = {
+        labels: labels,
+        datasets: [
+          {
+            label: 'Fund',
+            backgroundColor: 'rgb(255, 85, 0)',
+            borderColor: 'rgb(255, 85, 0)',
+            data: [0, 10, 5, 2, 20, 30, 45]
+          },
+          {
+            label: 'Morningstart category',
+            backgroundColor: 'rgb(0, 217, 255)',
+            borderColor: 'rgb(0, 217, 255)',
+            data: [0, 7, 1, 29, 77, 56, 27]
+          }
+        ]
+      }
+
+      const config = {
+        type: 'line',
+        data: data,
+        options: {}
+      }
+    </script>
+    <script>
+      const myChart = new Chart(document.getElementById('myChart'), config)
+    </script>
+  </body>
+</html>

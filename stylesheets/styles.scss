@@ -1,0 +1,59 @@
+@import 'variables.scss';
+@import 'fonts.scss';
+@import 'home.scss';
+@import 'results.scss';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: $bm_orange;
+
+  &:hover {
+    color: $bm_orange;
+    text-decoration: none;
+  }
+}
+
+.btn {
+  font-size: 1.8rem;
+  border-radius: 0.4rem;
+  color: $bm_white;
+  border-color: $bm_white;
+  padding: 0.8rem 2rem;
+  transition: all 0.3s ease-in-out;
+
+  &.btn-outline-primary {
+    background: rgba($bm_white, 0.5);
+    border: solid 0.1rem rgba($bm_white, 0.5);
+  }
+
+  &:hover {
+    background: $bm_white;
+    color: $bm_orange;
+  }
+}
+
+.pagination {
+  &_header {
+    display: flex;
+    justify-content: center;
+  }
+  .page-item {
+    a {
+      border: 0;
+      color: $bm_orange;
+
+      &:hover {
+        background: rgba($bm_orange, 0.2);
+      }
+    }
+
+    &.active {
+      a {
+        background: $bm_orange;
+      }
+    }
+  }
+}
